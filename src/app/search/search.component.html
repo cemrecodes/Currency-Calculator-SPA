@@ -1,0 +1,19 @@
+<p>
+  <mat-form-field>
+    <mat-select [formControl]="optionCtrl"[ngModel]="selectedOpt" 
+          (ngModelChange)="onChangeObj($event)" placeholder="Döviz kodu Seçiniz..." #singleSelect>
+      <mat-option>
+        <ngx-mat-select-search [formControl]="optionFilterCtrl" placeholderLabel="Döviz kodu arat..."
+        noEntriesFoundLabel="Döviz kodu bulunamadı."></ngx-mat-select-search>
+      </mat-option>
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option" >
+        {{ option.currency }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</p>
+<p>
+  <!-- Seçilen döviz kodu: {{optionCtrl.value?.currency}} <br> -->
+  <!-- selectedOpt: {{ selectedOpt.currency.toString() }} -->
+</p>
+

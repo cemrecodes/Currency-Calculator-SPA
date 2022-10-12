@@ -1,0 +1,101 @@
+.header {
+    height: 110px;
+    display: flex;
+    background-color: #FFE898 ;
+
+}
+
+.headline {
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: x-large;
+}
+
+.textFont {
+    padding: 16px 0px;
+    display: inline-flex;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.placing {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+mat-form-field {
+    display: inline-flex;
+}
+
+mat-label {
+    color: #ab964a !important;
+}
+
+.boxes {
+    padding: 20px;
+    height: 220px;
+    width: 206px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #ab964a !important;
+}
+  
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #ab964a !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: #ab964a  !important;
+}
+
+#button {
+    height: 1.4cm;
+    width: 2.5cm;
+    background-color:  #e2ce89 ;
+    font-size: medium;
+    font-weight: bold;
+   /* margin: 50px 5px; */
+}
+
+/*
+.button {
+    align-items: center;
+}
+*/
+
+#secondDiv {
+    background-color: #f9e087;
+    height: 100%;
+    display: flex;
+}
+
+#amount {
+    height: min-content;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #e1ce87 ;
+}
+
+#buttonDiv {
+    padding: 0px 0px 65px 0px;
+}
+
+
+/* .mat-flat-button:hover .mat-flat-button-focus-overlay {
+    opacity: 1 !important;
+  } */
+
+.mat-flat-button:hover {
+    /* background-color: #f9e087 !important; */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+} 
